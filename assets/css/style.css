@@ -1,0 +1,98 @@
+:root {
+    --primary-color: rgb(100, 6, 177);
+    --secondary-color: rgb(207, 99, 240);
+    --background-color: rgb(255, 255, 255);
+    --accent-color: rgba(161, 159, 159, 0.794);
+    --black-color: rgb(2, 1, 1); 
+  }
+  
+  body {
+  background: var(--background-color);
+  box-sizing: border-box;
+  margin:10px 2rem;
+  font-family: 'Roboto', sans-serif;
+  }
+  
+  header nav, .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  header, nav, a, .hi-score {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  header, nav, .time {
+    color: var(--black-color)
+  }
+  
+  main, section, .quiz-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 700px;
+    min-width:375px;
+    height: auto;
+  }
+  
+  .start-quiz {
+    text-align: center;
+  }
+  
+  div p {
+    font-size: 1.2rem;
+  }
+  
+  div .startbtn {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 5px 20px;
+    margin:10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+  
+  div .startbtn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  
+  div .btn {
+    display: flex;
+    flex-direction: column;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 5px 20px;
+    margin:10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+  
+  div .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  
+  div, p, .key {
+  margin-top:5px;
+  }
+  
+  .key {
+  color: var(--accent-color);
+  font-style:italic;
+  font-size: 1.5rem;
+  border-top: 1px solid var(--accent-color);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  

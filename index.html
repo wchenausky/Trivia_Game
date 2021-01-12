@@ -1,51 +1,69 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="stylesheet" text="text/css" href="./assets/style.css">
-    <title>Trivia Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-   
-    <header>
-        <nav class= "nav-wrapper">
-            <div class="high-score">
-            <h3 id="view-highscores" class= "high-score-title" onclick= "printHighScores()">View High Scores</h3>
-        </div>
-        <div>
-            <h3 class="time">Time: <span id="time">0</span></h3>
-        </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="quiz-wrapper">
-        <div id= "start-quiz" class= "begin-quiz">
-            <h1>Coding Trivia Game</h1>
-            <p>
-                Test your coding knowledge in this fun and interactie trivia game! Correct answers will increase your score by 1, and your timer by 10 secounds. Getting answers wrong will decrease your time by 10 seconds!
-            </p>
-            <button id= "start-quiz-btn" class="startbtn">Start Quiz</button>
-        </div>
+  <header>
+    <nav class="nav-wrapper">
+      <div class="hi-score">
+        <h3 id="view-highscores" class="hi-score-title" onclick="printHighscores()">View High Scores</h3>
+      </div>
+      <div>
+        <h3 class="time">Time: <span id="time">0</span></h3>
+      </div>
+    </nav>
+  </header>
 
-        <dix id="quiz-selection">
-            <div class= "question-mini">
-                <div id="answers"></div>
-                <div id="selection" class="key"></div>
-            </div>
-        </dix>
-
-        <div class="highscore" id="top-score">
-            <h2> Great Job!</h2>
-            <h3>Your final score is <span id="fianl-score">0</span></h3>
-            <label for="initias-area">Enter Initials:</label>
-            <input type= "text" name= "initials-area" maxlength= "4" id="initials">
-            <button id= "initials-submit-button" type="submit" class= "btn">Submit</button>
+  <main >
+    <section class="quiz-wrapper">
+      <div id="start-quiz" class="start-quiz" >
+        <h1>
+          Coding Quiz Challenge
+        </h1>
+        <p>
+          Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds! Correct answers will increase your score/time by 10 seconds!
+        </p>
+        <button id="start-quiz-btn" class="startbtn">Start Quiz</button>
+      </div>
+      <div id="quiz-section">
+        <div class= "question-mini">
+          <div class="questions">
+            <h1 id="quiz-question"></h1>
+          </div>
         </div>
-        </section>
-    </main>
-    <script src="./assets/questions.js"></script>
-    <script src="./assets/script.js"></script>
+        <div class= "question-mini">
+          <div id="answers"></div>
+          <div id="key" class="key"></div> 
+        </div>
+      </div>
+      <div class="highscore" id="highscore">
+        <h2>All done!</h2>
+        <h3>Your final score is <span id="final-score">0</span></h3>
+        <label for="initials-area">Enter initials:</label>
+        <input type="text" name="initials-area" maxlength="4" id="initials">
+        <button id="initials-submit-button" type="submit" class="btn">Submit</button>
+      </div>
+      <div id="highscore-display">
+        <div id="scores">
+          <h2>Highscores:</h2>
+          <ol id="display-scores"></ol>
+          <a href="./index.html"><button id="return-btn" class="startbtn">Play Again</button></a>
+          <button id="clear-btn" class="startbtn">Clear Highscores</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/questions.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
