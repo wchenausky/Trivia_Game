@@ -56,6 +56,11 @@ This is a fun game I made to test your knowledge of JavaScript. It's 5 questions
 5. Create repository
 6. Inside the repo go to settings, scroll down to GitHub Pages and publish your site to the Branch: main
 
+* (https://wchenausky.github.io/Trivia_Game/) 
+
+
+*  (https://github.com/wchenausky/Trivia_Game)
+
 
 
 
