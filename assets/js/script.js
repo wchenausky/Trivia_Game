@@ -1,4 +1,5 @@
 
+//question loop
 var currentQuestionIndex = 0;
 var time = 75;
 var timer;
@@ -20,6 +21,7 @@ var scoreDisplay = document.querySelector("#highscore-display")
 var hideHighScoresLink = document.querySelector("#view-highscores")
 var hideTime = document.querySelector(".time")
 
+//hides other screens
 function pageLoad() {
   highscoreScreen.setAttribute("class", "hide");
   quizScreen.setAttribute("class", "hide");
@@ -31,6 +33,7 @@ function pageLoad() {
 
 }
 
+//starts quiz
 function startQuiz() {
   titleScreen.setAttribute("class", "hide");
   highscoreScreen.setAttribute("class", "hide");
@@ -55,6 +58,7 @@ function countdown() {
   }
 }
 
+//grabs the questions
 function getQuestion() {
   var currentQuestion = questions[currentQuestionIndex];
   console.log(currentQuestion)
@@ -79,7 +83,7 @@ function getQuestion() {
   
 };
 
-
+// loops choices
 function questionClick() {
     
     if (this.value !== questions[currentQuestionIndex].correct) {
